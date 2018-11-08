@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="eng">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>Tooltip/Popover Demo</title>
+ <script   src="https://code.jquery.com/jquery-3.3.1.slim.min.js"   integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="   crossorigin="anonymous"></script>
+
+<style type="text/css">
+  
+
+.tooltip,.arrow:after{background:#111;background:rgba(0,0,0,0.9)}
+span.tooltip{font-family:arial;font-size:14px;font-weight:regular;position:absolute;padding:10px 20px;color:#fff;-webkit-border-radius:7px;-moz-border-radius:7px;border-radius:7px;-webkit-background-clip:padding-box;-moz-background-clip:padding;background-clip:padding-box;margin-top:20px;text-align:center;text-decoration:none;box-shadow:0 0 3px #000;z-index:9999}
+
+.tooltip .arrow{display:block;width:70px;height:16px;overflow:hidden;position:absolute;left:50%;margin-left:-35px;bottom:-16px}
+
+.tooltip .arrow:after{content:"";position:absolute;left:20px;top:-20px;width:25px;height:25px;-webkit-box-shadow:6px 5px 9px -9px #000 5px 6px 9px -9px #000;-moz-box-shadow:6px 5px 9px -9px #000 5px 6px 9px -9px #000;box-shadow:6px 5px 9px -9px #000 5px 6px 9px -9px #000;-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-ms-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg)}
+
+.arrow-top .arrow{top:-16px}.arrow-top .arrow:after{top:6px}
+div.main {
+  z-index:-1;
+}
+
+div.whitebox{
+  background-color:white;
+border:medium;
+padding:15px;
+opacity:1 !important;
+text-align:left;
+width:30%;
+}
+
+div.dialogclass{
+z-index:0;
+width:100%;
+height:100%;
+position:absolute;
+left:0px;
+top:0px;
+z-index:0;
+opacity:0.9;
+text-align:center;
+background-color:#CCF;
+}
+
+div.dialogcenter{
+opacity:1;
+text-align:center;
+background-color:white;
+}
+
+span.tooltip[aria-hidden='true'] {
+   display: none;
+}
+span.tooltip[aria-hidden='false'] {
+   display:block ;
+   
+}
+
+
+.hidden {display:none;}
+
+</style>
+
+<script type="text/javascript">
+  
+// open the dialog 
+$(document).ready(function(){
+   $("#tip1").attr("aria-hidden","true");
+   $("#tip1").addClass("hidden");
+   
+  $("#tripWire").focus(function(){
+    $("#tip1").attr("aria-hidden","false");
+    $("#tip1").removeClass("hidden");
+    
+  });
+    $("#tripWire").mouseover(function(){
+    $("#tip1").attr("aria-hidden","false");
+    $("#tip1").removeClass("hidden");
+  });
+   // repeat for the keyboard accessibility for all buttons, enter makes it click...
+     $("#tripWire").blur(function(){
+    $("#tip1").attr("aria-hidden","true");
+    $("#tip1").addClass("hidden");
+  });
+  
+    $("#tripWire").mouseleave(function(){
+    $("#tip1").attr("aria-hidden","true");
+    $("#tip1").addClass("hidden");
+  });
+    
+    $("#tripWire").keydown(function(ev){
+    if (ev.which ==27)  {
+             $("#tip1").attr("aria-hidden","true");
+             $("#tip1").addClass("hidden");
+             ev.preventDefault(); 
+             return false;
+             }
+  });
+     
+});
+  
+ 
+   
+</script>
+<script type="text/javascript">
+  
+// open the dialog 
+$(document).ready(function(){
+   $("#tip2").attr("aria-hidden","true");
+   $("#tip2").addClass("hidden");
+   
+  $("#tripWire2").focus(function(){
+    $("#tip2").attr("aria-hidden","false");
+    $("#tip2").removeClass("hidden");
+    
+  });
+    $("#tripWire2").mouseover(function(){
+    $("#tip2").attr("aria-hidden","false");
+    $("#tip2").removeClass("hidden");
+  });
+   // repeat for the keyboard accessibility for all buttons, enter makes it click...
+     $("#tripWire2").blur(function(){
+    $("#tip2").attr("aria-hidden","true");
+    $("#tip2").addClass("hidden");
+  });
+  
+    $("#tripWire2").mouseleave(function(){
+    $("#tip2").attr("aria-hidden","true");
+    $("#tip2").addClass("hidden");
+  });
+    
+    $("#tripWire2").keydown(function(ev){
+    if (ev.which ==27)  {
+             $("#tip2").attr("aria-hidden","true");
+             $("#tip2").addClass("hidden");
+             ev.preventDefault(); 
+             return false;
+             }
+  });
+     
+});
+  
+ 
+   
+</script>
+</head>
+  <body>
+   <div class="container">
+    <h1>Tooltip</h1>
+          <a href="#" aria-describedby="tip1" id="tripWire"><img src="../images/UniversalAccess.png" alt="Universal Access Icon"></a>
+      <span id="tip1" class="tooltip hidden" role="tooltip" aria-hidden="true">The Universal Access icon is commonly used within the Macintosh OS to symbolize the location where all of the accessibility preferences and options are contained.</span>
+      <h2>Accessibility By Platform</h2>
+      <ul>
+        <li><a href="https://www.apple.com/accessibility/mac/">Mac OS</a></li>
+        <li><a href="https://www.apple.com/accessibility/iphone/">iOS (iPhone)</a></li>
+        <li><a href="https://www.microsoft.com/en-us/accessibility/windows?activetab=pivot_1%3aprimaryr2">Windows</a></li>
+        <li><a href="https://support.google.com/accessibility/android/answer/6006564?hl=en">Android</a></li>
+        <li><a href="https://opensource.com/life/15/8/accessibility-linux-blind-disabled">Linux</a></li>
+      </ul>
+<h2>Tooltip With Button Trigger</h2>
+          <button aria-describedby="tip2" id="tripWire2"><img src="../images/UniversalAccess.png" alt="Universal Access Icon"></button>
+      <span id="tip2" class="tooltip hidden" role="tooltip" aria-hidden="true">The Universal Access icon is commonly used within the Macintosh OS to symbolize the location where all of the accessibility preferences and options are contained.</span>
+  </div>
+
+  </body>
+  </html>

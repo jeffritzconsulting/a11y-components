@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>A11Y Complex Table Demo</title>
+  <link rel="stylesheet" 
+        href="http://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" 
+        href="https://use.fontawesome.com/releases/v5.1.0/css/brands.css" 
+        integrity="sha384-7xAnn7Zm3QC1jFjVc1A6v/toepoG3JXboQYzbM0jrPzou9OFXm/fY6Z/XiIebl/k" 
+        crossorigin="anonymous">
+  <link rel="stylesheet" 
+        href="https://use.fontawesome.com/releases/v5.1.0/css/solid.css" 
+        integrity="sha384-TbilV5Lbhlwdyc4RuIV/JhD8NR+BfMrvz4BL5QFa2we1hQu6wvREr3v6XSRfCTRp" 
+        crossorigin="anonymous">
+  <link rel="stylesheet" 
+        href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" 
+        integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG" 
+        crossorigin="anonymous">
+  <link rel="stylesheet" 
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Arimo:400,400italic,700italic,700|Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic&amp;subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic" 
+        type="text/css" 
+        media="all">
+  <link rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+<link rel="stylesheet" href="css/JR-Main.css" charset="utf-8">
+	<style>
+		#root {padding-left: 100px;}
+	fieldset {border: solid 1px 
+		#888888; padding-left: 20px;}
+		ul {list-style: none;
+		}
+		li {
+			display: inline-block;
+			padding: 10px;
+		}
+	</style>
+	</head>
+	</head>
+
+<body>
+	<a class="sr-only sr-only-focusable" href="#mainContent">Skip to Main Content</a>
+	<div id="root">
+	<header>
+		<h1 align="center" id="mainContent">Complex Table, Decimals, Percentages, Dates &amp; Times Demo</h1>
+		</header>
+		<main>
+			<h2>Complex Table</h2>
+		<table width="800" border="1" cellpadding="5" summary="Contains family paid claims data for 2017 that is broken down by family member and month with the annual total per member.">
+  <caption>
+	2017 Family Paid Claims Data
+			</caption>
+  <tbody>
+    <tr>
+      <th scope="col">Name</th>
+      <th scope="col">January</th>
+      <th scope="col">February</th>
+      <th scope="col">March</th>
+      <th scope="col">April</th>
+      <th scope="col">May</th>
+      <th scope="col">June</th>
+      <th scope="col">July</th>
+      <th scope="col">August</th>
+      <th scope="col">September</th>
+      <th scope="col">October</th>
+      <th scope="col">November</th>
+      <th scope="col">December</th>
+      <th scope="col">Total</th>
+    </tr>
+    <tr>
+      <th scope="row">John Doe</th>
+      <td>$2,500.00</td>
+      <td>$1,000.00</td>
+      <td>$0.00</td>
+      <td>$500.00</td>
+      <td>$800.00</td>
+      <td>$600.00</td>
+      <td>$2,000.00</td>
+      <td>$3,000.00</td>
+      <td>$200.00</td>
+      <td>$2,590.00</td>
+      <td>$2,870.00</td>
+      <td>$30,999.00</td>
+      <td>$47,059.00</td>
+    </tr>
+    <tr>
+      <th scope="row">Jane Doe</th>
+      <td>$500.00</td>
+      <td>$1,000.00</td>
+      <td>$70,000.00</td>
+      <td>$1,000.00</td>
+      <td>2,000.00</td>
+      <td>$800.00</td>
+      <td>$900.00</td>
+      <td>$0.00</td>
+      <td>$300.00</td>
+      <td>$200.00</td>
+      <td>$2,500.00</td>
+      <td>$999.99</td>
+      <td>$80,199.99</td>
+    </tr>
+    <tr>
+      <th scope="row">Leonard Doe</th>
+      <td>$500.00</td>
+      <td>$0.00</td>
+      <td>$0.00</td>
+      <td>$0.00</td>
+      <td>$500.00</td>
+      <td>$0.00</td>
+      <td>$0.00</td>
+      <td>$0.00</td>
+      <td>$0.00</td>
+      <td>$500.00</td>
+      <td>$0.00</td>
+      <td>$0.00</td>
+      <td>$1,500.00</td>
+    </tr>
+    <tr>
+      <th scope="row">Ethan Doe</th>
+      <td>$10,000</td>
+      <td>$0.00</td>
+      <td>$0.00</td>
+      <td>$500.00</td>
+      <td>$0.00</td>
+      <td>$0.00</td>
+      <td>$0.00</td>
+      <td>$0.00</td>
+      <td>$0.00</td>
+      <td>$500.00</td>
+      <td>$0.00</td>
+      <td>$0.00</td>
+      <td>$11,000.00</td>
+    </tr>
+  </tbody>
+</table>
+			<h2>Decimals</h2>
+			<p>Pi = 3.14159</p>
+			<p>Large number with repeating decimal: 333,444,999.9999999</p>
+			<p>Currency: $1,000,000.00</p>
+			<h2>Percentages</h2>
+			<p>80% unemoployment rate for blind and visually impaired individuals in the U.S.</p>
+			<p>Plan pays 60% after deductible.</p>
+			<p>You pay 40% after ductible.</p>
+			<p>Give it 100% every day!</p>
+			<h2>Dates &amp; times</h2>
+			<p>Meeting scheduled for November 5, 2018 at 9:30 AM.</p>
+			<p>Birth Date: 11/05/1972</p>
+			<p>Special Date: Dec 25, 2018</p>
+			<p>New Years Day: 1 Jan. 2019</p>
+			<p>Production stops on Dec. 31, 2018 at 5:00 PM</p>
+			<p>Eye appointment: 4 Nov 2018</p>
+			<p>Election Day 2018: 11-06-2018</p>
+			<p>Polls Close at 7 PM.</p>
+			<p>24-hour Clock: 13:15</p>
+			
+		</main>
+		<footer role="contentinfo" align="center">
+			<p class="small">Copyright &copy; 2016-2018 · All Rights Reserved · Jeff Ritz Consulting</p>
+			</footer>	
+		</main>
+	</div><!-- End Root -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+          integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+          crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" 
+          integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+          crossorigin="anonymous"></script>
+</body>
+</html>

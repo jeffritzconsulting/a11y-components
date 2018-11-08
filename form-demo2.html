@@ -1,0 +1,90 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form-Demo 2</title>
+  <link rel="stylesheet" 
+        href="http://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" 
+        href="https://use.fontawesome.com/releases/v5.1.0/css/brands.css" 
+        integrity="sha384-7xAnn7Zm3QC1jFjVc1A6v/toepoG3JXboQYzbM0jrPzou9OFXm/fY6Z/XiIebl/k" 
+        crossorigin="anonymous">
+  <link rel="stylesheet" 
+        href="https://use.fontawesome.com/releases/v5.1.0/css/solid.css" 
+        integrity="sha384-TbilV5Lbhlwdyc4RuIV/JhD8NR+BfMrvz4BL5QFa2we1hQu6wvREr3v6XSRfCTRp" 
+        crossorigin="anonymous">
+	</head>
+
+<body>
+	<header>
+	<h1>NGX Form Component Demo</h1>
+	</header>
+	<main>
+		<form>
+		<fieldset>
+			<legend>
+				<h2>Login Form</h2>
+			</legend>
+			<div class="form-group username-block user-response clearfix">
+                                	<!-- <label id="loginFailureText"></label> -->
+                                	<!--<div  class="form-group blank-block clearfix"></div>-->
+									<label class="col-sm-12 control-label" id="user-name-label" for="userName">User name</label>
+                                    <div class="col-sm-12">
+                                        <!-- <label for="userName" class="sr-only">User Name</label> -->
+                                        <input type="text" class="form-control" id="userName" name="USER" data-rule-required="true" data-rule-minlength="5" maxlength="25" aria-required="true" autocomplete="off">
+                                    </div>
+								 	<!--<div class="col-xs-12 col-sm-offset-3 marT10 pad0">
+										 <div class="col-sm-4 col-xs-12 pad0 rem-me-blk">
+											<div class="checkboxbg clearfix">
+												<label class="clearfix" for="rem-check-box">
+													  <span class="unchkLabelCheck pull-left"></span>
+													  <span class="span-check-txt pull-right">Remember me</span>            
+													</label>
+												<input type="checkbox" name="remMe" value="Yes" id="rem-check-box" class="checkbox sr-only">
+											</div>
+										</div>
+										 <div class="col-sm-4 col-xs-12 pad0 for-user-blk">
+										
+										</div>
+                                    </div>   -->                                
+                                </div>
+			<div class="form-group password-block clearfix">
+									<label class="col-sm-12 control-label" id="password-label" for="password" style="left: !important;">Password</label>
+                                    <div class="col-sm-12">
+                                        <!-- <label for="password" class="sr-only">password</label> -->
+										<!-- disables autocomplete --><input type="text" tabindex="-1" style="display:none">
+                                        <input type="password" class="form-control" id="password" name="PASSWORD" data-rule-minlength="6" maxlength="20" autocomplete="off">
+                                    </div>
+                                    <div class="col-sm-11 marT10">
+                                       <!-- disables autocomplete --> <input type="password" tabindex="-1" style="display:none">
+                                    </div>
+                                </div>
+			</fieldset>
+			<div class="form-group rem-me-wrapper user-response clearfix">                                	
+									<span class="col-sm-3"></span>                                  
+								 	
+									 <div class="col-sm-12 col-xs-12 pad0 rem-me-blk">
+										<div class="checkboxbg clearfix">
+											<label class="clearfix" for="rem-check-box">
+												  <span class="unchkLabelCheck pull-left"></span>
+												  <span class="span-check-txt pull-right">Remember user name</span>            
+												</label>
+											<input type="checkbox" name="remMe" value="Yes" id="rem-check-box" class="checkbox sr-only">
+										</div>
+									</div>			 
+                                </div>
+			<div class="form-group secure-login-btn clearfix">
+                                    <div class="col-sm-12">
+                                       <!--  <button type="submit" id="secureLogin-btn" class="primaryBtn col-md-8 col-sm-8 col-xs-12">Secure log in</button> -->
+										<button type="submit" id="secureLogin-btn" class="primaryBtn col-md-8 col-sm-8 col-xs-12" style="margin-left: 0%;">Secure Log In</button>
+    
+
+                                    </div>
+                                </div>
+			
+		
+		</form>
+	</main>
+	
+</body>
+</html>

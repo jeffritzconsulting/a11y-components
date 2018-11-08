@@ -1,0 +1,267 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>A11Y Form Demo</title>
+  <link rel="stylesheet" 
+        href="http://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" 
+        href="https://use.fontawesome.com/releases/v5.1.0/css/brands.css" 
+        integrity="sha384-7xAnn7Zm3QC1jFjVc1A6v/toepoG3JXboQYzbM0jrPzou9OFXm/fY6Z/XiIebl/k" 
+        crossorigin="anonymous">
+  <link rel="stylesheet" 
+        href="https://use.fontawesome.com/releases/v5.1.0/css/solid.css" 
+        integrity="sha384-TbilV5Lbhlwdyc4RuIV/JhD8NR+BfMrvz4BL5QFa2we1hQu6wvREr3v6XSRfCTRp" 
+        crossorigin="anonymous">
+  <link rel="stylesheet" 
+        href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" 
+        integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG" 
+        crossorigin="anonymous">
+  <link rel="stylesheet" 
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800|Arimo:400,400italic,700italic,700|Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,700italic,900,900italic&amp;subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic" 
+        type="text/css" 
+        media="all">
+  <link rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB"
+        crossorigin="anonymous">
+<link rel="stylesheet" href="css/JR-Main.css" charset="utf-8">
+	<style>
+		#root {padding-left: 100px;}
+	fieldset {border: solid 1px 
+		#888888; padding-left: 20px;}
+		ul {list-style: none;
+		}
+		li {
+			display: inline-block;
+			padding: 10px;
+		}
+	</style>
+	</head>
+	</head>
+
+<body>
+	<a class="sr-only sr-only-focusable" href="#mainContent">Skip to Main Content</a>
+	<div id="root">
+	<header>
+		<h1 align="center" id="mainContent">Star Trek Fan Profile</h1>
+		</header>
+		<main>
+			<form>
+			<div role="group" aria-labeledby="personal">
+			<h2 id="personal">Personal Information</h2>
+<div class="form-row">
+				  <div class="form-group">
+    <label for="fname">First Name</label><input type="text" class="form-control" id="fname" aria-describedby="fnameHelp" required aria-required="true" placeholder="John" maxlength="100">
+  </div>
+  <div class="form-group">
+    <label for="lname">Last Name</label><input type="text" class="form-control" id="lname" aria-describedby="lnameHelp" required aria-required="true" placeholder="Doe" maxlength="100">
+  </div>
+	<br />
+	</div><br />
+	<div class="form-row">
+		<div class="form-group">
+	<label for="email">Email</label><input type="email" class="form-control" id="email" aria-describedby="emailHelp" required aria-required="true" placeholder="example@mail.com" maxlength="100">
+	<small id="emailHelp" class="form-text text-muted">Enter your email address. We never share your email with anyone.</small>
+	</div>
+	<div class="form-group">
+	<label for="phone">Phone Number</label>
+	<input type="tel" class="form-control" id="phone" required aria-required="true" placeholder="720-555-1212" maxlength="12">
+	<label for="phoneType">Type</label>
+	<select id="phoneType" required aria-required="true">
+		<option value="mobile">Mobile</option>
+		<option value="work">Work</option>
+		<option value="home">Home</option>
+		</select>
+	</div>
+			</div>
+	<div class="form-row">
+	<div class="form-group">
+		<label for="address">Street Address</label>
+		<input type="text" class="form-control" maxlength="100" id="address" required aria-required="true" placeholder="1234 Main St">
+		</div>
+	</div>
+				<div class="form-row">
+					<div class="form-group">
+		<label for="city">City</label>
+		<input type="text" id="city" class="form-control" required aria-required="true" placeholder="Denver">
+		</div>
+	<div class="form-group">
+		<label for="state">State</label>
+		<select class="form-control" required aria-required="true">
+		<option value="Alabama">AL</option>
+		<option value="Alaska">AK</option>
+		<option value="Arkansas">AR</option>
+		<option value="Arizona">AZ</option>	
+		<option value="California">CA</option>
+		<option value="Colorado">CO</option>
+		<option value="Connecticut">CT</option>
+		<option value="Deleware">DE</option>
+		<option value="Florida">FL</option>
+		<option value="Georgia">GA</option>
+		<option value="Hawaii">HI</option>
+		<option value="Idaho">ID</option>
+		<option value="Illinois">IL</option>
+		<option value="Indiana">IN</option>
+		<option value="Iowa">IA</option>
+		<option value="Kansas">KS</option>
+		<option value="Kentucky">KY</option>
+		<option value="Louisiana">LA</option>
+		<option value="Maine">ME</option>
+		<option value="Maryland">MD</option>
+		<option value="Massachusets">MA</option>
+		<option value="Michigan">MI</option>
+		<option value="Minnesota">MN</option>
+		<option value="Mississippi">MS</option>
+		<option value="Missouri">MO</option>
+		<option value="Montana">MT</option>
+		<option value="Nebraska">NE</option>
+		<option value="Nevada">NV</option>
+		<option value="New Hampshire">NH</option>
+		<option value="New Jersey">NJ</option>
+		<option value="New Mexico">NM</option>
+		<option value="New York">NY</option>
+		<option value="North Carolina">NC</option>
+		<option value="North Dakota">ND</option>
+		<option value="Ohio">OH</option>
+		<option value="Oklahoma">OK</option>
+		<option value="Oregon">OR</option>
+		<option value="Pennsylvania">PA</option>
+		<option value="Rhode Island">RI</option>
+		<option value="South Carolina">SC</option>
+		<option value="South Dakota">SD</option>
+		<option value="Tennessee">TN</option>
+		<option value="Texas">TX</option>
+		<option value="Utah">UT</option>
+		<option value="Vermont">VT</option>
+		<option value="Virginia">VA</option>
+		<option value="Washington">WA</option>
+		<option value="West Virginia">WV</option>
+		<option value="Wisconsin">WI</option>
+		<option value="Wyoming">WY</option>
+		</select>
+		</div>
+		<div class="form-group">
+		<label for="zipCode">Zip Code</label>
+		<input type="text" id="zipCode" class="form-control" required aria-required="true" placeholder="80202" maxlength="5">
+		</div>
+</div>
+			</div><!-- End Personal Info -->
+
+					<h2 id="ships">Star Trek Ships<span class="sr-only">37 options</span></h2>
+					<p id="supplemental">Select your favorite Star ship(s).</p>
+					<div role="group" aria-labelledby="ships supplimental">
+				<input id="ship1" type="checkbox" name="starships" value="USS Gryphon">
+					<label for="ship1">USS Gryphon</label>
+					<input id="ship2" type="checkbox" name="starships" value="USS Exeter">
+					<label for="ship2">USS Exeter</label>
+					<input id="ship3" type="checkbox" name="starships" value="USS Drake">
+					<label for="ship3">USS Drake</label>
+					<input id="ship4" type="checkbox" name="starships" value="USS Hermes">
+					<label for="ship4">USS Hermes</label>
+					<input id="ship5" type="checkbox" name="starships" value="USS Ajax">
+					<label for="ship5">USS Ajax</label>
+					<input id="ship6" type="checkbox" name="starships" value="USS Archer">
+					<label for="ship6">USS Archer</label>
+					<input id="ship7" type="checkbox" name="starships" value="USS Bradbury">
+					<label for="ship7">USS Bradbury</label>
+					<input id="ship8" type="checkbox" name="starships" value="USS Centaur">
+					<label for="ship8">USS Centaur</label>
+					<input id="ship9" type="checkbox" name="starships" value="USS Challenger">
+					<label for="ship9">USS Challenger</label>
+					<input id="ship10" type="checkbox" name="starships" value="USS Portland">
+						<label for="ship10">USS Portland</label>
+					<input id="ship11" type="checkbox" name="starships" value="USS Constellation">
+						<label for="ship11">USS Constellation</label>
+					<input id="ship12" type="checkbox" name="starships" value="USS Endeavour">
+						<label for="ship12">USS Endeavour</label>
+					<input id="ship13" type="checkbox" name="starships" value="USS Yorktown">
+					<label for="ship13">USS Yorktown</label>
+					<input id="ship14" type="checkbox" name="starships" value="USS Horizon">
+					<label for="ship14">USS Horizon</label>
+					<input id="ship15" type="checkbox" name="starships" value="USS Defiant">
+					<label for="ship15">USS Defiant</label>
+					<input id="ship16" type="checkbox" name="starships" value="USS Vengance">
+					<label for="ship16">USS Vengance</label>
+					<input id="ship17" type="checkbox" name="starships" value="USS Kelvin">
+					<label for="ship17">USS Kelbvin</label>
+					<input id="ship18" type="checkbox" name="starships" value="USS Excelsior">
+					<label for="ship18">USS Excelsior</label>
+					<input id="ship19" type="checkbox" name="starships" value="USS Voyager">
+					<label for="ship19">USS Voyager</label>
+					<input id="ship20" type="checkbox" name="starships" value="USS Titan">
+					<label for="ship20">USS Titan</label>
+					<input id="ship21" type="checkbox" name="starships" value="USS Melbourne">
+					<label for="ship21">USS Melbourne</label>
+					<input id="ship22" type="checkbox" name="starships" value="USS Rutledge">
+				<label for="ship22">USS Rutledge</label>
+					<input id="ship23" type="checkbox" name="starships" value="USS Europa">
+				<label for="ship23">USS Europa</label>
+					<input id="ship24" type="checkbox" name="starships" value="USS Rhode Island">
+					<label for="ship24">USS Rhode Island</label>
+					<input id="ship25" type="checkbox" name="starships" value="USS Grissom">
+					<label for="ship25">USS Grissom</label>
+					<input id="ship26" type="checkbox" name="starships" value="USS Pasteur">
+					<label for="ship26">USS Pasteur</label>
+					<input id="ship27" type="checkbox" name="starships" value="USS Enterprise">
+					<label for="ship27">USS Enterprise</label>
+					<input id="ship28" type="checkbox" name="starships" value="USS Saber">
+					<label for="ship28">USS Saber</label>
+					<input id="ship29" type="checkbox" name="starships" value="USS Yellowstone">
+					<label for="ship29">USS Yellowstone</label>
+					<input id="ship30" type="checkbox" name="starships" value="USS Soyuz">
+					<label for="ship30">USS Soyuz</label>
+					<input id="ship31" type="checkbox" name="starships" value="USS Chekov">
+					<label for="ship31">USS Chekov</label>
+					<input id="ship32" type="checkbox" name="starships" value="USS Jenolan">
+					<label for="ship32">USS Jenolan</label>
+					<input id="ship33" type="checkbox" name="starships" value="USS Demeter">
+					<label for="ship33">USS Demeter</label>
+					<input id="ship34" type="checkbox" name="starships" value="USS Aventine">
+					<label for="ship34">USS Aventine</label>
+					<input id="ship35" type="checkbox" name="starships" value="USS Shenzhou">
+					<label for="ship35">USS Shenzhou</label>
+					<input id="ship36" type="checkbox" name="starships" value="USS Denver">
+					<label for="ship36">USS Denver</label>
+					<input id="ship37" type="checkbox" name="starships" value="USS Destiny">
+					<label for="ship37">USS Destiny</label>
+		
+				</div>
+				<fieldset>
+				<legend><h2>Star Trek Planets</h2><p>Select your favorite planets</p></legend>
+				<input id="planet1" type="checkbox" name="planets" value="Tellar">
+				<label for="planet1">Tellar</label><br />
+				<input id="planet2" type="checkbox" name="planets" value="Andoria">
+				<label for="planet2">Andoria</label><br />
+				<input id="planet3" type="checkbox" name="planets" value="Vulcan">
+				<label for="planet3">Vulcan</label><br />
+				<input id="planet4" type="checkbox" name="planets" value="Quonos">
+				<label for="planet4">Quonos</label><br />
+				<input id="planet5" type="checkbox" name="planets" value="Earth">
+				<label for="planet5">Earth</label><br />
+				<input id="planet6" type="checkbox" name="planets" value="Romulas">
+				<label for="planet6">Romulas</label><br />
+				<input id="planet7" type="checkbox" name="planets" value="Ferengenar">
+				<label for="planet7">Ferengenar</label><br />
+				</fieldset>
+			
+				<br />
+			<div class="btn-group">
+			<button type="reset" class="btn btn-secondary">Reset</button>
+			<button type="submit" class="btn btn-primary">Submit</button>
+</div>
+			</form>
+		<footer role="contentinfo" align="center">
+			<p class="small">Copyright &copy; 2016-2018 · All Rights Reserved · Jeff Ritz Consulting</p>
+			</footer>	
+		</main>
+	</div><!-- End Root -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+          integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+          crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" 
+          integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+          crossorigin="anonymous"></script>
+</body>
+</html>
